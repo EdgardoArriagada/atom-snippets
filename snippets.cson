@@ -1,0 +1,8 @@
+'.source.js':
+  'it, should':
+    'prefix': 'it'
+    'body': """
+    it('should ${1}', () => {
+      $2
+    })
+    """
