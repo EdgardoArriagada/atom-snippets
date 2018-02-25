@@ -1,8 +1,22 @@
 '.source.js':
-  'it, should':
+  'const study':
+    'prefix': 'study'
+    'body': """
+      const study = $1
+      Object.keys(study).sort().forEach(key => {
+        console.log(
+          'key: ' + key,
+          study[key]
+            ? study[key]
+            : 'empty'
+        )
+      })
+    """
+
+  'it ("should...':
     'prefix': 'it'
     'body': """
-    it('should ${1}', () => {
-      $2
-    })
+      it('should ${1}', () => {
+        $2
+      })
     """
