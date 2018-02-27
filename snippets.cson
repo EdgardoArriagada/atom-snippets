@@ -15,3 +15,11 @@
         $2
       })
     """
+
+  'describe ("MyContainer...':
+    'prefix': 'describe'
+    'body': """
+      describe('${1}', () => {
+        $2
+      })
+    """
