@@ -31,3 +31,9 @@
         $1
       })
     """
+
+  'expect ("expect(wrapper...':
+    'prefix': 'expect'
+    'body': """
+      expect($1).$2
+    """
