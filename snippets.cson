@@ -23,3 +23,11 @@
         $2
       })
     """
+
+  'beforeEach ("beforeEach () =>...':
+    'prefix': 'beforeEach'
+    'body': """
+      beforeEach(() => {
+        $1
+      })
+    """
