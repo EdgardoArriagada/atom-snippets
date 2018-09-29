@@ -27,8 +27,9 @@
   'beforeEach ("beforeEach () =>...':
     'prefix': 'beforeEach'
     'body': """
+      let $1
       beforeEach(() => {
-        $1
+        $1 = $2
       })
     """
 
